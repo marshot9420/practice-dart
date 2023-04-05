@@ -180,3 +180,50 @@ num x = 12;
 num y = 1.2;
 }
 ```
+
+# 2.1 - Lists
+
+dark에서 lists를 선언하는 것은 두 가지 방법이 있다.
+
+```dart
+void main(){
+int case1 = [1,2,3,4,5];
+List case2 = [1,2,3,4,5];
+}
+```
+
+만약 vscode나 dartPad를 사용한다면 맨 끝을 쉽표로 마무리하면 유용하다.
+
+```dart
+void main(){
+int case1 = [
+1,
+2,
+3,
+4,
+5,
+];
+}
+```
+
+dart의 유용한 점은 `collection if`와 `collection for`을 지원하는 것이다.
+
+collection if를 사용하면 `존재할 수도 안할 수도 있는 요소를 가지고 올 수 있다.`
+
+```dart
+void main(){
+var giveMeSix = true;
+int case1 = [
+1,
+2,
+3,
+4,
+5,
+if(giveMeSix) 6,
+];
+// 아래와 같은 기능이다.
+if(giveMeSix){
+case1.add(6);
+}
+}
+```
