@@ -1,3 +1,6 @@
 void main() {
-  dynamic name = "marshot";
+  String? name = "marshot";
+  if (name != null) {
+    name.isNotEmpty;
+  }
 }
